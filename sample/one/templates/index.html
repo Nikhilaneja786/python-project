@@ -1,0 +1,286 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MealTime</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script src="static/jav.js"></script>
+
+  {% comment %} <img src="static/images/" alt"food1.png"> {% endcomment %}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+  <script src="jav.js" defer></script>
+
+   <!-- Site Icons -->
+   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">    
+   <!-- Site CSS -->
+   <link rel="stylesheet" href="css/style.css">    
+   <!-- Responsive CSS -->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/custom.css">
+
+
+</head>
+
+<body>
+<header>
+    <div class="wrapper">
+        <nav>
+                        <input type="checkbox" id="show-search">
+                        <input type="checkbox" id="show-menu">
+                        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                        <div class="content">
+                        <div class="logo"><img src="{% static 'images/logo.png' %}"></div>
+                            <ul class="links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Menu</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li>
+                                <a href="#" class="desktop-link">User Login</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">User Login</label>
+                                <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Signup</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#" class="desktop-link">Admin Login</a>
+                                <input type="checkbox" id="show-services">
+                                <label for="show-services">Admin Login</label>
+                                <ul>
+                                <li><a href="#">Login</a></li>
+                                <li><a href="#">Sign Up</a></li>  
+                                </ul>
+                            </li>
+                <!-- <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Type Something to Search..." required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form> -->
+        </nav>
+    </div>
+
+</header>
+ 
+    
+  <!-- <div class="dummy-text">
+    <h2>Responsive Dropdown Menu Bar with Searchbox</h2>
+    <h2>using only HTML & CSS - Flexbox</h2>
+  </div> -->
+    <main class="kd">
+        <div class="container">
+            <div class="slider-wrapper">
+            <button id="prev-slide" class="slide-button ">
+                <!-- <i class="fi fi-rr-envelope"></i> -->
+                <!-- <i class="fi fi-tr-angle-circle-left"></i>
+                 -->
+                 <i id="leftb" class="fi fi-tr-angle-circle-left" ></i>
+                <!-- <i class="fi fi-rs-angle-circle-left"></i> -->
+            </button>
+            <ul class="image-list">
+                <img class="image-item" src="{% static "images/food1.jpg" %}"alt="img-1" />
+                <img class="image-item" src="{% static "images/food2.jpg" %}" alt="img-2" />
+                <img class="image-item" src="{% static "images/food3.jpg" %}" alt="img-3" />
+                <img class="image-item" src="{% static "images/food4.jpg" %}" alt="img-4" />
+                <img class="image-item" src="{% static "images/food5.jpg" %}" alt="img-5" />
+                <img class="image-item" src="{% static "images/food1.jpg" %}"alt="img-1" />
+                <img class="image-item" src="{% static "images/food2.jpg" %}" alt="img-2" />
+                <img class="image-item" src="{% static "images/food3.jpg" %}" alt="img-3" />
+                <img class="image-item" src="{% static "images/food4.jpg" %}" alt="img-4" />
+                <img class="image-item" src="{% static "images/food5.jpg" %}" alt="img-5" />
+            </ul>
+            
+            </div>
+            <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+                <div class="scrollbar-thumb"></div>
+            </div>
+            </div>
+
+        </main>
+            
+            <div id="y" class= "col-lg-12 col-md-12 col-sm-12 text-center"><p id="nik">About</p></div>
+
+            <div class="about-section-box">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <img src="{% static "images/food4.jpg" %}" alt="" class="img-fluid" width="450px">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+                            <div class="inner-column">
+                                <h1>MealTime</span></h1>
+                                <!-- <h2>About</h2> -->
+                                <p class="justice-content-center"> MealTime service is platform that connect customers with food establishments, <br>Allowing them to order food online or through a mobile app and have it delivered to their doorstep</p>
+                                <!-- <a class="btn btn-lg btn-circle btn-outline-new-white" href="#">Reservation</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- <div id="hy " class="col-lg-12 col-md-6 col-sm-12 text-center"><p>Contact</p></div> -->
+       <div id="y" class= "col-lg-12 col-md-12 col-sm-12 text-center"><p id="nik">contact</p></div>
+        
+       
+       <!-- <div id="google" class="col-lg-12 col-md-6 col-sm-12 text-center">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6813.989042379484!2d75.58557011528129!3d31.359130408341166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a509c3d93d9af%3A0x82b81626816473d8!2sReru%2C%20Punjab!5e0!3m2!1sen!2sin!4v1710822640000!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div> -->
+
+
+       <!-- Start Contact info -->
+	<div class="contact-imo-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<!-- <i class="fa fa-volume-control-phone"></i> -->
+                    <!-- <i class="fi fi-tr-house-chimney"></i>
+                     -->
+                     <i class="fi fi-tr-phone-call"></i>
+					<div class="overflow-hidden">
+						<h4>Phone</h4>
+						<p class="lead">
+							9878678766
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- <i class="fa fa-envelope"></i> -->
+                    <!-- <i class="fi fi-tr-envelope"></i>
+                     -->
+                     <i class="fi fi-rr-envelope"></i>
+					<div class="overflow-hidden">
+						<h4>Email</h4>
+						<p class="lead">
+							nikhil@gmail.com
+						</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- <i class="fa fa-map-marker"></i> -->
+                    <i class="fi fi-tr-land-layer-location"></i>
+					<div class="overflow-hidden">
+						<h4>Location</h4>
+						<p class="lead">
+							jalandhar
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Contact info -->
+	
+	<!-- Start Footer -->
+	<footer class="footer-area bg-f">
+        <div class="example-element">
+            <!-- Content goes here -->
+        </div>
+            
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<h3>About Us</h3>
+					<p>MealTime service is platform that connect customers with food establishments, <br>Allowing them to order food online or through a mobile app and have it delivered to their doorstep</p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Opening hours</h3>
+					<p><span class="text-color">Monday-Saturday</span> 9:A.M- 10PM</p>
+					<p><span class="text-color">Sunday:</span> Closed</p>
+					<!-- <p><span class="text-color">Thu-Fri :</span> 9:Am - 10PM</p>
+					<p><span class="text-color">Sat-Sun :</span> 5:PM - 10PM</p> -->
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Contact information</h3>
+					<!-- <p class="lead">Ipsum Street, Lorem Tower, MO, Columbia, 508000</p> -->
+					<p class="lead"><a href="#">0181 2233223</a></p>
+					<p><a href="mailto:nikhilaneja7886@gmail.com"> nikhil@gmail.com</a></p>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<h3>Social Media</h3>
+					<div class="subscribe_form">
+						<!-- <form class="subscribe_form">
+							<input name="EMAIL" id="subs-email" class="form_input" placeholder="Email Address..." type="email">
+							<button type="submit" class="submit">SUBSCRIBE</button>
+							<div class="clearfix"></div>
+						</form> -->
+					</div>
+					<ul class="list-inline f-social">
+						<!-- <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> -->
+						
+						<li class="list-inline-item">
+                            <a href="https://www.instagram.com/urs_786nick?igsh=MXIzcndsYnEwdDk2Nw==">
+                                <img src="{% static "images/instagram.png" %}" alt="Instagram">
+                            </a>
+                        </li>
+                        
+						<li class="list-inline-item">
+                            <a href="https://youtube.com/@cruelmusicworld?si=DD-K6Lvnty-DjMj8">
+                                <img src="{% static "images/youtube.png" %}" alt="YouTube">
+                            </a>
+                        </li>
+                        
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p class="company-name">All Rights Reserved. &copy; 2024 <a href="#">MealTime</a> Design By : NIKHIL'S 
+					<a href="https://html.design/"></a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</footer>
+	<!-- End Footer -->
+	
+	<!-- <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a> -->
+
+	<!-- ALL JS FILES -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+	<script src="js/jquery.superslides.min.js"></script>
+	<script src="js/images-loded.min.js"></script>
+	<script src="js/isotope.min.js"></script>
+	<script src="js/baguetteBox.min.js"></script>
+	<script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
+{% endblock  %}
+
+
+
+    
